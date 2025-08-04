@@ -18,10 +18,10 @@ class ShowMainPage(TemplateView):
             data_text = cleaned_text(str(data_text))
             data_phone = cleaned_phone_number(data_phone)
             data_telegram = cleaned_id_telegram(data_telegram)
-            print(data_phone)
-            print(data_email)
-            print(data_telegram)
-            print(data_text)
+            # print(data_phone)
+            # print(data_email)
+            # print(data_telegram)
+            # print(data_text)
             if data_email:
                 send_email(data_email, data_text)
             if data_telegram:
