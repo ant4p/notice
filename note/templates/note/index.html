@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='container'>
+    <h3>ГЛАВНАЯ</h3>
+    <h3> Введите номер телефона, почту, id аккаунта в ТГ:
+        </h3>
+    <form href="{% url 'note:succes' %}" method='post'>
+        {% csrf_token %}
+        <p>Введите номер телефона для получения смс: <br> <input  name='data_phone'/></p>
+        <p>Введите Email для получения письма: <br> <input  name='data_email'/></p>
+        <p>Введите аккаунт ID пользователя вккаунта в ТГ: <br> <input  name='data_telegram'/></p>
+        <br>
+        <p>Введите текст уведомления: <br> <input  name='data_text'/></p>
+        <br>
+        <br>
+        <input type='submit' value='Отправить' />
+    </form>
+    <br>
+
+    <br>
+
+    <br>
+
+</div>
+
+{% endblock content %}
