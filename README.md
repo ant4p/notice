@@ -1,6 +1,6 @@
 ### Простейший сервис уведомлений по Email, SMS, Telegram. ###
 
-Для запуска - склонируйте проект командой git clone https://github.com/ant4p/notice.git
+Для запуска - склонируйте проект командой git clone https://github.com/ant4p/simple_solution_for_notifications_mail_sms_tg.git <br/>
 Создайте виртуальное окружение.<br/>
 Установите в виртуальное окружение файл requirements.txt командой pip install -r requirements.txt<br/>
 Файл .env_example замените на .env c вашим SECRET_KEY и данными сервисов:.<br/>
